@@ -1,0 +1,49 @@
+Pair Coding meetings are protocolled and feedbacks are saved:
+
+__________________________________________________
+27.03.2019 Peter -> Stephanie B:
+
+Analyse des Usermanagement codes:
+	- Besprechung von Programmierrichtlinien
+	- Sortieren der Methoden 
+	- Aufteilung von Methoden in subroutinen
+	- Defintion von globalen Variablen
+	- Besprechung der Verbindung zum Netzwerkprotokoll
+
+Beschlüsse:
+	- Der Code wird überarbeitet
+	- Exception handling wird eingefügt
+	- Prioritäten wurden in ToDo-Liste definiert
+
+_________________________________________________________
+
+03.04.2019 Peter -> Stephanie M:
+
+Analyse der Spielmechanik
+    - Besprechung vom genauen Ablauf beim Erstellen einer Lobby und Games
+    - Empfehlung von optimierten Datenstrukturen um Codelänge und Komplexität zu vereinfachen
+    - Grundsätzliche Vereinfachung vom Code
+    - Hinweis auf mögliche unbehandelte Errors.
+
+Beschlüsse:
+    - Einführung besserer HashMaps
+    - Nutzung von komponentenweise For anstelle von iterativen for-Schleife
+    - Einführung von Exception Handling
+    - Matches werden nicht benannt
+
+_________________________________________________________
+
+19.04 - 20.04 Peter (whole Code)
+
+Analyse der Spielmechanik
+	- Impleting of consistent Broadcasting system
+	- Split methods with too many features
+	- Prepare for JUnit testing
+	- Add SpotTheBug library
+
+
+Beschlüsse:
+    - Einführung besserer Datenstrukturen
+    - Nutzung von komponentenweise For anstelle von iterativen for-Schleife
+    - Einführung von mehr Exception Handling
+    - Übersichtlicher Code

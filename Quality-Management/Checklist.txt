@@ -1,0 +1,28 @@
+Checkliste-Quality Management
+
+This checklist is processed in this order by Quality Manager Tobias before each milestone.
+
+
+1. Remove Orphan Code and orphan imports.
+2. No unneccessary files are on git
+3. Javadoc generates without errors or warnings
+4. Code is commented
+5. Google check style succeds for every class (only Warnings)
+6. Check for recent blog post
+7. Remove unnecessary comments or ToDos
+8. All required documents are on git. 
+9. README.md is up to date. And all references are correct
+
+10. Testing with a newly cloned Repository
+11. Jar generates with "build-cs108" task.
+12. Start Server on port 2005
+13. Start 1x Client without direct login (on a different computer)
+14. Start 3x Clients with direct login
+15. A match is created, 3 other clients can join
+16. Players can: public chat, lobby chat, private chat
+17. People can play over network
+18. Winner is determined correctly
+19. The code compiles
+21. ALL JUNIT TESTS pass (gradlew test)
+22. Briefly check the completness of all Milestones
+23. Quality Assurance Manager approves Milestone by pushing a final commit labelled "APPROVED FOR MILESTONE" and makes sure noone else commits afterwards.

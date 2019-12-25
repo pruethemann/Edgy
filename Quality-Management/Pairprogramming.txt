@@ -1,0 +1,107 @@
+03.04.2019 Stephanie M und Tobias
+
+Behobene Probleme
+    - Einstellung des Run Tasks in IntelliJ.
+    - Player Klasse konnte durch foreach loop strukturierter werden.
+    - Die vier Spieler wurden in einer Hashmap zusammengefasst.
+    - Regeländerungen der move Funktion verbessert.
+    - DataOutputStream für Gui Chat konnte durch statisches Feld initialisiert werden.
+    - launch Funktion konnte über neuen Thread gestartet werden.
+
+_________________________________________________________
+
+08.04.2019 Stephanie M, Stephanie B und Tobias
+
+Fortschritt
+    - Jedem Player wurde der zugehörende ClientThread zugeordnet
+    - ChatGUI wird beim starten/beitreten eines Matches gestartet
+    - Eine HashMap wurde zum Speichern der Spieler im MatchChat erzeugt
+    - Match Nummer wurde an ChatGUI übergeben um die Message an die richtigen Clients zu senden
+    - Spieler erhält Nummer im Match
+    - ChatGUI im eigenen Match implementiert
+
+_________________________________________________________
+
+12.04.2019 Stephanie B. Rüthemann Peter
+
+Fortschritt:
+    - Implementierung von Passwort-Funktion:
+    - Beim erstellen eines Spielers muss ein Passwort angegeben werden: 'nuser username:pwd'
+    - Passwort wird in DB gespeichert
+    - Beim Login wird pwd überprüft: 'login username:pwd'
+
+_________________________________________________________
+15.04.2019 Tobias und Stephanie M.
+
+Fortschritt
+    - Das Layout für die GUI- Fenster Lobby und Match wurden skizziert
+    - Eine neue Klasse "LobbyGUI" stellt die gewünschten Komponenten grundlegend dar
+    - Fehlende Netzwerkbefehle wurden ausgearbeitet und als Bug issues auf GitLab veröffentlicht
+    - Die zur Mechanik gehörenden Klassen wurden für die neuen Netzwerkbefehle 
+      zur Abfrage des Spielstands vom Client vorbereitet
+
+_________________________________________________________
+24.04.2019 Tobias, Peter, Stephanie B., Stephanie M.
+
+Fortschritt: 
+    - Stephanie B. erstellte weitere Unit- Tests für die Regeln des Ablegens eines Spielsteins
+    - Peter half Stephanie B., den Einstieg in JUnit zu finden
+    - Tobias konvertierte die Felder des Boards von Textfeldern zu ImagePanes
+    - Tobias fügte die Pieces zum mainFrame hinzu
+    - Stephanie M. erstellte eine Methode, die das Drehen des BufferedImages erlaubt
+
+_________________________________________________________
+25.04.2019 Tobias, Peter, Stephanie B., Stephanie M.
+
+Fortschritt: 
+    - Stephanie B. und Peter erstellten weitere JUnits
+    - Tobias optimierte das Layout des mainFrame
+    - Stephanie M. behob bugs beim Rotieren und Flippen der PieceImages
+    - Stephanie M. begann, den MouseAdapter zu implementieren
+    - Die Gruppe besprach weitere Netzwerkbefehle (listPieces, color, rank/name/points,etc.)
+    - Tobias und Stephanie M. strukturierten die weiteren Schritte und teilten die Aufgaben auf.
+
+_________________________________________________________
+
+26.04.2019 Tobias und Stephanie M.
+
+Fortschritt
+    - mainFrame konnte auf Fullscreen gesetzt werden und wieder mit Rahmen
+    - Chat Nachricht kann per Enter gesendet werden
+    - bearbeitung: MouseEvent um gewähltes Piece zu ermitteln
+
+_________________________________________________________
+
+29.04.2019 Tobias und Stephanie M.
+
+Fortschritt
+    - Koordinaten des Mousclicks auf dem Board werden korrekt berechnet
+    - Dem Server kann der move mit pieceID, row and column geschickt werden
+    - Die richtige Farbe von Spielsteinen wird auf dem individuellen MatchGUI dargestellt
+    - Board wird richtig dargestellt auf dem GUI, zuvor verschoben
+    - Skip beinahe vollständig angehängt
+
+_________________________________________________________
+09.05.2019 Tobias und Stephanie M.
+
+Fortschritt
+    - PNG Dateien für die darstellung wer an der Reihe oder aus dem Spiel ist konnten erstellt werden
+    - Ein Skip Window wurde erstellt um einen versehentlichen skip zu verhindern
+    - Ein Window um den Username oder das Passwort zu ändern wurde erstellt
+    - Zwei Buttons wurden dem MatchGui hinzugefügt
+    - Layout vom Match wurde verbessert	
+    
+
+_________________________________________________________
+10.05.2019 Tobias und Stephanie M.
+
+Fortschritt
+    - Das MatchGUI wurde resizeable gestaltet, damit auch bei unterschiedlichen 
+      Bildschirmauflösungen das Layout gleich bleibt.
+    - Die Herangehensweise an drag and drop wurde erneut besprochen. 
+    - Die Pieces auf dem Board sollen in Zukunft dieselbe Umrandung haben wie im PiecesGUI
+      -> ein neues PNG wird benötigt.
+    - Die buttons wurden umbenannt und wenn nötig mit Grossbuchstaben begonnen.
+
+
+_________________________________________________________

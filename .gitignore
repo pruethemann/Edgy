@@ -1,0 +1,22 @@
+# Ignore Gradle project-specific cache directory
+.gradle
+# Ignore Idea directory
+.idea
+# Ignore Gradle build output directory
+build
+
+# Ignore out folder
+out
+config
+lock
+var
+
+# Ignore files with the following file extensions
+*.com
+*.class
+*.exe
+*.onetoc2
+*.log
+*.db
+userdata.db
+*.plantuml

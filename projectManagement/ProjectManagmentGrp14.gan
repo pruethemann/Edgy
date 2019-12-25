@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="While(True)" company="University of Basel" webLink="https://whiletruedonothing.home.blog" view-date="2019-04-01" view-index="0" gantt-divider-location="663" resource-divider-location="300" version="2.8.10" locale="en_GB">
+    <description><![CDATA[Programmierprojekt FS 2019]]></description>
+    <view zooming-state="default:6" id="gantt-chart">
+        <field id="tpd3" name="Name" width="294" order="0"/>
+        <field id="tpd4" name="Begin date" width="163" order="1"/>
+        <field id="tpd5" name="End date" width="187" order="2"/>
+        <timeline><![CDATA[28]]></timeline>
+        <option id="color.recent"><![CDATA[#cc0000 #0000ff]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="208" order="0"/>
+        <field id="1" name="Default role" width="88" order="1"/>
+    </view>
+    <!-- -->
+    <calendars base-id="Switzerland">
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="true"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+        <date year="" month="1" date="1" type="HOLIDAY"/>
+        <date year="" month="1" date="2" type="HOLIDAY"/>
+        <date year="" month="8" date="1" type="HOLIDAY"/>
+        <date year="" month="12" date="25" type="HOLIDAY"/>
+        <date year="" month="12" date="26" type="HOLIDAY"/>
+        <date year="2012" month="4" date="6" type="HOLIDAY"/>
+        <date year="2012" month="4" date="8" type="HOLIDAY"/>
+        <date year="2012" month="4" date="9" type="HOLIDAY"/>
+        <date year="2012" month="5" date="17" type="HOLIDAY"/>
+        <date year="2012" month="5" date="27" type="HOLIDAY"/>
+        <date year="2012" month="5" date="28" type="HOLIDAY"/>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="31" name="Milestone 1: Game concept" color="#000000" meeting="false" start="2019-02-21" duration="14" complete="0" thirdDate="2019-02-21" thirdDate-constraint="0" expand="true">
+            <task id="16" name="Develop game idea" color="#8cb6ce" meeting="false" start="2019-02-21" duration="3" complete="0" thirdDate="2019-02-18" thirdDate-constraint="0" expand="true">
+                <depend id="38" type="2" difference="0" hardness="Strong"/>
+                <depend id="52" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="13" name="Create blog" color="#8cb6ce" meeting="false" start="2019-02-21" duration="3" complete="0" thirdDate="2019-03-06" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[Create blog and report every meeting:
+
+https://whiletruedonothing.home.blog]]></notes>
+            </task>
+            <task id="38" name="Develop game concept" color="#8cb6ce" meeting="false" start="2019-02-24" duration="4" complete="0" thirdDate="2019-02-18" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[Develop game concept, goals and principles of the board game Blokus for 3-4 players.
+
+Resources are responsible for:
+- Explaning game rules
+- Create a suitable Powerpoint template
+- Draw a mockup of the game as illustration]]></notes>
+                <depend id="105" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="52" name="Server - Client concept" color="#8cb6ce" meeting="false" start="2019-02-24" duration="4" complete="0" thirdDate="2019-02-18" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[Develop concept for Server - Client protocol]]></notes>
+                <depend id="105" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="105" name="Define requirements" color="#8cb6ce" meeting="false" start="2019-02-28" duration="1" complete="0" thirdDate="2019-03-06" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[1. Check whether Server protocol fullfills all criteria of game mechanics
+2. Name the game
+3. Which libraries are necessary
+4. ...]]></notes>
+                <depend id="60" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="60" name="Test presentation" color="#8cb6ce" meeting="true" start="2019-03-01" duration="0" complete="0" thirdDate="2019-02-18" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[Defining and practicing presentation:
+
+- Who is presenting what and for how long?
+- Are the slides readable and not overloaded?
+- Who is introducing?
+- Who is taking questions?
+- Check for typos and other mistakes
+
+]]></notes>
+                <depend id="63" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="63" name="Check-in 1: Finalize documents" color="#8cb6ce" meeting="false" start="2019-03-06" duration="1" complete="0" thirdDate="2019-02-27" thirdDate-constraint="0" priority="4" expand="true">
+                <notes><![CDATA[Commit the following documents to gitlab:
+
+ - README:
+     - Link to blog
+     - Location to ganttProject file
+     - Location to presentation
+
+- GantProject file
+- presentation as PDF]]></notes>
+                <depend id="28" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="122" name="Develop project plan" color="#8cb6ce" meeting="false" start="2019-02-21" duration="10" complete="0" thirdDate="2019-02-19" thirdDate-constraint="0" expand="true">
+                <depend id="28" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="28" name="Milestone 1: Game concept" color="#cc0000" shape="1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1" meeting="true" start="2019-03-07" duration="0" complete="0" thirdDate="2019-02-18" thirdDate-constraint="0" priority="2" expand="true">
+                <depend id="68" type="2" difference="0" hardness="Rubber"/>
+                <depend id="187" type="2" difference="0" hardness="Rubber"/>
+            </task>
+        </task>
+        <task id="70" name="Milestone 2: Server functionality" meeting="false" start="2019-03-07" duration="19" complete="0" expand="false">
+            <task id="253" name="Server" color="#8cb6ce" meeting="false" start="2019-03-07" duration="14" complete="0" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+                <task id="68" name="Network protocol" color="#8cb6ce" meeting="false" start="2019-03-07" duration="3" complete="0" thirdDate="2019-03-06" thirdDate-constraint="0" expand="true">
+                    <notes><![CDATA[Implement:
+
+- 2 Clients can connect to Server
+- 2 Clients can chat with each other]]></notes>
+                    <depend id="74" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="74" name="User Management" color="#8cb6ce" meeting="false" start="2019-03-10" duration="2" complete="0" thirdDate="2019-03-06" thirdDate-constraint="0" expand="true">
+                    <notes><![CDATA[The user management is handeled via a SQLLite DB or in case Java library for accessing SQL is blacklisted we use a CVS file:
+
+Table 1: users
+userID, username, dateCreated, dateLastLogin
+
+Primary Key: userID
+
+Table 2: matches
+matchID, userID, score, totalTime
+
+Primary Key: matchID AND UserID
+
+____
+Create class UserManagement
+
+To do for Fasnachtsferien:
+-	Installiere die Software: SQL-Lite Browser. / Öffne die Datei ./Tools/users.db
+-	Füge manuell einige beliebige Benutzer und Spielscores ein
+-	Create class Usermanagement
+o	Nutze die library java.sql um dich mit der Datei users.db zu verbinden (void connect()
+o	getUsers(): Lese alle users in eine HashMap ein: (Key: UserID / value: Attribute (Username, …)
+o	getMatches(): Lese alle historischen Werte in einen vernüftigen Datentypen ein
+o	Berechne für jeden user die gesamten Score und schreibe es in die hashMap
+o	insertUser(): Schreibe eine Methode, die in der DB einen neuen User einfügt. Eine eindeutige UserID wird dazu erstellt.
+o	changeUsername(): Methode verändert den Nutzernamen eines bestehen Users
+o	insertMatch(): Methode fügt die Daten nach einem Spiel ein. Für jeden Spieler Score
+o	…
+]]></notes>
+                    <depend id="78" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="78" name="User Login" color="#8cb6ce" meeting="false" start="2019-03-12" duration="2" complete="0" thirdDate="2019-03-06" thirdDate-constraint="0" expand="true">
+                    <notes><![CDATA[A existing user (in DB) can Login to server and currenty highscore is shown]]></notes>
+                    <depend id="94" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="94" name="Ping and Logout" color="#8cb6ce" meeting="false" start="2019-03-14" duration="3" complete="0" thirdDate="2019-03-06" thirdDate-constraint="0" expand="true">
+                    <notes><![CDATA[- Ping is sent from server to client and vice versa
+- Log out is handled properly]]></notes>
+                    <depend id="257" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="257" name="Server documentation" color="#8cb6ce" meeting="false" start="2019-03-17" duration="2" complete="0" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+                    <depend id="265" type="2" difference="0" hardness="Strong"/>
+                    <depend id="388" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="265" name="Testing Server queries" color="#8cb6ce" meeting="false" start="2019-03-19" duration="2" complete="0" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+                    <depend id="87" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="255" name="Client" color="#8cb6ce" meeting="false" start="2019-03-07" duration="10" complete="0" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+                <task id="187" name="Mechanics: Board" color="#8cb6ce" meeting="false" start="2019-03-07" duration="3" complete="0" thirdDate="2019-03-05" thirdDate-constraint="0" expand="true">
+                    <notes><![CDATA[- Define board (Class board)
+- Shapes can be stored a specific x/y coordinates
+- a check functions validates the correcntes of the move
+ (fields are empty / adjacent to one of the own shapes, ...)
+
+In Detail:
+
+-	Schreibe eine Klasse Figures, die alle möglichen Figuren beeinhalt
+o	getStartFigures() alle Figuren in einer HashMap (Key: figureID / value: Attribute (Ausdehnung, orentierung, Farbe, …) werden returned
+o	Alle möglichen Figuren werden erzeugt
+-	Schreibe eine Klasse Player:
+o	Felder: alle Startfiguren als Hashmap
+o	Feld: username, userID, farbe, aktueller Score, historischer Score, aktueller Rang, …
+o	getAmountFigures()
+-	Erstelle eine Klasse Board, die das Spielfeld in einem geeigneten Datentypen abbildet
+o	Figure kann an einer beliebigen Stelle positioniert werden
+o	printBoard(): Gebe Spielfeld mit gesetzten Figuren aus (Verschiedene Zeichen für Farben)
+o	check(): Beginne die Regeln zu implementieren:
+	Keine Überlagerungen von Figuren
+	Erster Stein in Ecke
+	Nächster Stein an Ecke berührend,
+	…
+o	Create Class Match
+	Diese Klasse führt durch die Runde. Sie beeinhaltet Die Spieler
+
+
+]]></notes>
+                    <depend id="191" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="191" name="Mechanics: Shapes" color="#8cb6ce" meeting="false" start="2019-03-10" duration="3" complete="0" thirdDate="2019-03-05" thirdDate-constraint="0" expand="true">
+                    <notes><![CDATA[- Define shapes (Class shapes)
+- different colors
+- Different shapes
+- rotation possible]]></notes>
+                    <depend id="195" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="195" name="Mechanics: Rules" color="#8cb6ce" meeting="false" start="2019-03-13" duration="4" complete="0" thirdDate="2019-03-05" thirdDate-constraint="0" expand="true">
+                    <notes><![CDATA[Implement game rules
+Which moves are allowed?
+
+(See game mechanics Milestone 1 and details in Mechanics: Board]]></notes>
+                    <depend id="87" type="2" difference="0" hardness="Strong"/>
+                    <depend id="388" type="2" difference="0" hardness="Strong"/>
+                    <depend id="392" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="87" name="Quality Management" color="#8cb6ce" meeting="false" start="2019-03-21" duration="3" complete="0" thirdDate="2019-03-06" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[Quality checks are required which tests for:
+
+- UserID and username is unique (Otherwise assign different username)
+- The human-readable network protocol is defined in a dedicated document
+- Network protocol is being used and validated correctly
+- The human-readable network protocol is defined and documented in source code]]></notes>
+                <depend id="157" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="386" name="Presentation and Documents" color="#8cb6ce" meeting="false" start="2019-03-17" duration="8" complete="0" thirdDate="2019-02-11" thirdDate-constraint="0" expand="true">
+                <task id="388" name="Slides" color="#8cb6ce" meeting="false" start="2019-03-19" duration="3" complete="0" thirdDate="2019-02-11" thirdDate-constraint="0" expand="true">
+                    <depend id="157" type="2" difference="0" hardness="Rubber"/>
+                </task>
+                <task id="157" name="Test presentation" color="#8cb6ce" meeting="true" start="2019-03-24" duration="0" complete="0" thirdDate="2019-03-03" thirdDate-constraint="0" expand="true">
+                    <depend id="3" type="2" difference="0" hardness="Rubber"/>
+                </task>
+                <task id="392" name="Finalize all documents" color="#8cb6ce" meeting="false" start="2019-03-17" duration="6" complete="0" thirdDate="2019-02-11" thirdDate-constraint="0" expand="true">
+                    <depend id="394" type="2" difference="0" hardness="Rubber"/>
+                </task>
+                <task id="394" name="Check-in 2:" color="#8cb6ce" meeting="true" start="2019-03-25" duration="0" complete="0" thirdDate="2019-02-11" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="3" name="Milestone 2: Server functionality" color="#8cb6ce" meeting="true" start="2019-03-26" duration="0" complete="0" thirdDate="2019-02-25" thirdDate-constraint="0" priority="2" expand="true">
+                <depend id="177" type="2" difference="0" hardness="Strong"/>
+                <depend id="263" type="2" difference="0" hardness="Strong"/>
+                <depend id="275" type="2" difference="0" hardness="Strong"/>
+                <depend id="279" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="97" name="Milestone 3: Game prototyp" color="#8cb6ce" meeting="false" start="2019-03-16" duration="30" complete="0" thirdDate="2019-03-06" thirdDate-constraint="0" expand="false">
+            <task id="259" name="Server" color="#8cb6ce" meeting="false" start="2019-03-26" duration="9" complete="0" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+                <task id="263" name="List all players and Highscore" color="#8cb6ce" meeting="false" start="2019-03-26" duration="3" complete="0" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+                    <notes><![CDATA[Server can print all players who ever played and returns their score.]]></notes>
+                    <depend id="266" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="266" name="Server starts new game" color="#8cb6ce" meeting="false" start="2019-03-29" duration="3" complete="0" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+                    <depend id="170" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="170" name="Change username" color="#8cb6ce" meeting="false" start="2019-04-01" duration="2" complete="0" thirdDate="2019-03-05" thirdDate-constraint="0" expand="true">
+                    <notes><![CDATA[A user can login to server via GUI]]></notes>
+                    <depend id="271" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="271" name="Client status" color="#8cb6ce" meeting="false" start="2019-04-03" duration="1" complete="0" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+                    <notes><![CDATA[Checks which clients are connected.]]></notes>
+                    <depend id="200" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="261" name="Client" meeting="false" start="2019-03-16" duration="19" complete="0" expand="true">
+                <task id="286" name="Structure - Familiarize with JavaFx" color="#8cb6ce" meeting="false" start="2019-03-16" duration="3" complete="0" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+                    <notes><![CDATA[Draw the game and necessary windows. Check out JavaFx]]></notes>
+                    <depend id="146" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="146" name="Hello World from GUI" color="#8cb6ce" meeting="false" start="2019-03-19" duration="4" complete="0" thirdDate="2019-03-03" thirdDate-constraint="0" expand="true">
+                    <notes><![CDATA[- Familiarize with JavaFX
+- Take a keyboard input and print it on screen
+- Draw the necessary shapes on a canvas
+   - Class shapes
+   - all shapes
+   - rotation ]]></notes>
+                </task>
+                <task id="177" name="GUI - Board" color="#8cb6ce" meeting="false" start="2019-03-26" duration="3" complete="0" thirdDate="2019-03-05" thirdDate-constraint="0" expand="true">
+                    <notes><![CDATA[- Game board is defined in Canvas.
+- Unused shapes of player are drawn next to board.]]></notes>
+                    <depend id="182" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="182" name="GUI - Shapes on Board" color="#8cb6ce" meeting="false" start="2019-03-29" duration="6" complete="0" thirdDate="2019-03-05" thirdDate-constraint="0" expand="true">
+                    <notes><![CDATA[The shapes defined on the server a drawn on the GUI board.]]></notes>
+                    <depend id="200" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="277" name="Game Rules" meeting="false" start="2019-03-26" duration="9" complete="0" expand="true">
+                <task id="279" name="Distribute shapes" color="#8cb6ce" meeting="false" start="2019-03-26" duration="2" complete="0" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+                    <depend id="278" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="278" name="Place shape on board" color="#8cb6ce" meeting="false" start="2019-03-28" duration="3" complete="0" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+                    <depend id="280" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="280" name="Check correctness of move" color="#8cb6ce" meeting="false" start="2019-03-31" duration="2" complete="0" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+                    <depend id="281" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="281" name="Check for win" color="#8cb6ce" meeting="false" start="2019-04-02" duration="2" complete="0" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+                    <depend id="200" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="274" name="Chat" meeting="false" start="2019-03-26" duration="4" complete="0" expand="true">
+                <task id="275" name="Client to Client" color="#8cb6ce" meeting="false" start="2019-03-26" duration="4" complete="0" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="200" name="Cute Bugs" color="#8cb6ce" meeting="false" start="2019-04-04" duration="4" complete="0" thirdDate="2019-03-05" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[Bug fixing and testing
+
+Milestones are fullfilled]]></notes>
+                <depend id="196" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="282" name="Presentation" meeting="false" start="2019-04-04" duration="4" complete="0" expand="true">
+                <task id="283" name="Update Slides" color="#8cb6ce" meeting="false" start="2019-04-04" duration="3" complete="0" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+                    <notes><![CDATA[Update slides according to Milestone 3]]></notes>
+                    <depend id="196" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="196" name="Test presentation" color="#8cb6ce" meeting="true" start="2019-04-08" duration="0" complete="0" thirdDate="2019-03-05" thirdDate-constraint="0" expand="true">
+                    <depend id="5" type="2" difference="0" hardness="Rubber"/>
+                </task>
+            </task>
+            <task id="315" name="Check-in 3" color="#8cb6ce" meeting="true" start="2019-04-10" duration="0" complete="0" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true"/>
+            <task id="5" name="Milestone 3:" color="#0000ff" meeting="true" start="2019-04-15" duration="0" complete="0" thirdDate="2019-02-25" thirdDate-constraint="0" priority="2" expand="true">
+                <depend id="208" type="2" difference="0" hardness="Rubber"/>
+                <depend id="212" type="2" difference="0" hardness="Rubber"/>
+            </task>
+        </task>
+        <task id="100" name="Milestone 4: Let's play" color="#8cb6ce" meeting="false" start="2019-04-15" duration="27" complete="0" thirdDate="2019-03-06" thirdDate-constraint="0" expand="true">
+            <task id="289" name="Client" color="#8cb6ce" meeting="false" start="2019-04-15" duration="23" complete="0" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+                <task id="295" name="GUI" meeting="false" start="2019-04-15" duration="14" complete="0" expand="true">
+                    <task id="208" name="Develop GUI for Lobby" color="#8cb6ce" meeting="false" start="2019-04-15" duration="4" complete="0" thirdDate="2019-03-05" thirdDate-constraint="0" expand="true">
+                        <notes><![CDATA[Tobias assembles the whole GUI and creates the view of a player.]]></notes>
+                        <depend id="291" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="291" name="Match GUI" color="#8cb6ce" meeting="false" start="2019-04-19" duration="4" complete="0" thirdDate="2019-04-19" thirdDate-constraint="0" expand="true">
+                        <depend id="293" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="293" name="Add inGame Chat into Lobby" color="#8cb6ce" meeting="false" start="2019-04-23" duration="4" complete="0" thirdDate="2019-04-23" thirdDate-constraint="0" expand="true">
+                        <depend id="204" type="2" difference="0" hardness="Strong"/>
+                        <depend id="419" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="419" name="Draw pieces in Match" meeting="false" start="2019-04-27" duration="1" complete="0" expand="true">
+                        <depend id="420" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="420" name="Draw board in Match" meeting="false" start="2019-04-28" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="296" name="Game" meeting="false" start="2019-04-27" duration="11" complete="0" expand="true">
+                    <task id="298" name="Start new Game" color="#8cb6ce" meeting="false" start="2019-04-27" duration="2" complete="0" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+                        <depend id="210" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="210" name="Start several lobbies" color="#8cb6ce" meeting="false" start="2019-04-29" duration="4" complete="0" thirdDate="2019-03-05" thirdDate-constraint="0" expand="true">
+                        <notes><![CDATA[Stephanie makes sure that several lobbies a 4 players can be started.]]></notes>
+                        <depend id="223" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="223" name="New game" color="#8cb6ce" meeting="false" start="2019-05-03" duration="3" complete="0" thirdDate="2019-03-28" thirdDate-constraint="0" expand="true">
+                        <notes><![CDATA[After a game has been finished. A new game can be started in same lobby.]]></notes>
+                        <depend id="204" type="2" difference="0" hardness="Rubber"/>
+                        <depend id="425" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="425" name="Game realises end of game" color="#8cb6ce" meeting="false" start="2019-05-06" duration="1" complete="0" thirdDate="2019-04-15" thirdDate-constraint="0" expand="true">
+                        <notes><![CDATA[The game realises that the game ends.]]></notes>
+                        <depend id="424" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="424" name="Winner is properly determined" color="#8cb6ce" meeting="false" start="2019-05-07" duration="1" complete="0" thirdDate="2019-04-15" thirdDate-constraint="0" expand="true">
+                        <notes><![CDATA[After end of game has been determined. The winner gets his points.]]></notes>
+                    </task>
+                </task>
+            </task>
+            <task id="303" name="Testing" meeting="false" start="2019-04-18" duration="24" complete="0" expand="true">
+                <task id="212" name="JUnit tests" color="#8cb6ce" meeting="false" start="2019-04-18" duration="4" complete="0" thirdDate="2019-03-05" thirdDate-constraint="0" expand="true">
+                    <notes><![CDATA[Stephanie defines several good and worst case scenarios and implements the JUnit tests.]]></notes>
+                    <depend id="204" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="204" name="Debugging and Testing" color="#8cb6ce" meeting="false" start="2019-05-06" duration="4" complete="0" thirdDate="2019-03-05" thirdDate-constraint="0" expand="true">
+                    <notes><![CDATA[The game fullfills the following criteria:
+
+- A full round is playable
+- A winner is determined
+- Every player gets a score and score is saved in DB
+- Username is changable in GUI
+- A new game can be started]]></notes>
+                    <depend id="226" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="226" name="Quality Managment" color="#8cb6ce" meeting="false" start="2019-05-10" duration="2" complete="0" thirdDate="2019-03-28" thirdDate-constraint="0" expand="true">
+                    <notes><![CDATA[The game passes the Junit tests]]></notes>
+                </task>
+            </task>
+            <task id="206" name="Check-in: Final documents" color="#8cb6ce" meeting="true" start="2019-05-12" duration="0" complete="0" thirdDate="2019-03-05" thirdDate-constraint="0" expand="true">
+                <depend id="8" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="8" name="Milestone 4:" color="#8cb6ce" meeting="true" start="2019-05-12" duration="0" complete="0" thirdDate="2019-02-25" thirdDate-constraint="0" expand="true">
+                <depend id="307" type="2" difference="0" hardness="Strong"/>
+                <depend id="312" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="102" name="Milestone 5: It works" color="#8cb6ce" meeting="false" start="2019-05-12" duration="10" complete="0" thirdDate="2019-03-06" thirdDate-constraint="0" expand="true">
+            <task id="305" name="Client" color="#8cb6ce" meeting="false" start="2019-05-12" duration="5" complete="0" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+                <task id="307" name="Textures for shapes" color="#8cb6ce" meeting="false" start="2019-05-12" duration="2" complete="0" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+                    <depend id="234" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="234" name="Interrupt game" color="#8cb6ce" meeting="false" start="2019-05-14" duration="2" complete="0" thirdDate="2019-03-28" thirdDate-constraint="0" expand="true">
+                    <notes><![CDATA[A new round can be started. User managment handling is working properly.]]></notes>
+                    <depend id="231" type="2" difference="0" hardness="Rubber"/>
+                    <depend id="434" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="434" name="Insert Sound" color="#8cb6ce" meeting="false" start="2019-05-16" duration="1" complete="0" thirdDate="2019-05-16" thirdDate-constraint="0" expand="true">
+                    <notes><![CDATA[Sounds for win or fail.]]></notes>
+                </task>
+            </task>
+            <task id="310" name="Documentation" meeting="false" start="2019-05-16" duration="6" complete="0" expand="true">
+                <task id="231" name="Manuel" color="#8cb6ce" meeting="false" start="2019-05-16" duration="2" complete="0" thirdDate="2019-03-25" thirdDate-constraint="0" expand="true">
+                    <notes><![CDATA[Write Manuel. How to play the game. It's either written in LateX or InDesgn.]]></notes>
+                    <depend id="247" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="247" name="Building Script" color="#8cb6ce" meeting="false" start="2019-05-18" duration="1" complete="0" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+                    <notes><![CDATA[Update Builing Script]]></notes>
+                    <depend id="244" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="244" name="Document Architecture" color="#8cb6ce" meeting="false" start="2019-05-19" duration="2" complete="0" thirdDate="2019-02-11" thirdDate-constraint="0" expand="true">
+                    <depend id="229" type="2" difference="0" hardness="Strong"/>
+                    <depend id="437" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="437" name="Let's play" color="#8cb6ce" meeting="false" start="2019-05-21" duration="1" complete="0" thirdDate="2019-04-01" thirdDate-constraint="0" expand="true">
+                    <notes><![CDATA[Record a Let's play for 1 min.]]></notes>
+                </task>
+            </task>
+            <task id="311" name="Testing" meeting="false" start="2019-05-12" duration="8" complete="0" expand="true">
+                <task id="312" name="Net working communication" color="#8cb6ce" meeting="false" start="2019-05-12" duration="4" complete="0" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+                    <depend id="314" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="314" name="Live demo with 4 players" color="#8cb6ce" meeting="false" start="2019-05-16" duration="4" complete="0" thirdDate="2019-05-11" thirdDate-constraint="0" expand="true">
+                    <depend id="229" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="229" name="Test presentation" color="#8cb6ce" meeting="true" start="2019-05-21" duration="0" complete="0" thirdDate="2019-03-25" thirdDate-constraint="0" expand="true">
+                <depend id="10" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="316" name="Check- in 5:" color="#8cb6ce" meeting="true" start="2019-05-20" duration="0" complete="0" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true"/>
+            <task id="10" name="Milestone 5:" color="#8cb6ce" meeting="true" start="2019-05-21" duration="0" complete="0" thirdDate="2019-02-25" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="130" name="Ongoing Tasks" meeting="false" start="2019-02-17" duration="92" complete="0" expand="false">
+            <task id="131" name="Blog" color="#8cb6ce" meeting="false" start="2019-02-17" duration="92" complete="0" thirdDate="2019-02-17" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[Stephanie is responsible to protocol every meeting on the Team blog.]]></notes>
+            </task>
+            <task id="137" name="Maintain Project Plan" color="#8cb6ce" meeting="false" start="2019-02-17" duration="92" complete="0" thirdDate="2019-02-17" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
+                <notes><![CDATA[Peter reguarly updates the project plan before every team meeting.]]></notes>
+            </task>
+            <task id="142" name="Quality Management" color="#8cb6ce" meeting="false" start="2019-03-18" duration="63" complete="0" thirdDate="2019-02-17" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
+                <notes><![CDATA[Tobias reguarly checks the quality of the code.
+
+The team follows the Google Java styile codex.
+
+The code is properly commented.
+The names are straightforward and understandable.]]></notes>
+            </task>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="Ruthemann Peter" function="Default:1" contacts="peter.ruethemann@stud.unibas.ch" phone="0789072270"/>
+        <resource id="1" name="Tobias Christ" function="1" contacts="tobias.christ@stud.unibas.ch" phone="079 695 77 99"/>
+        <resource id="2" name="Stephanie Brogli" function="2" contacts="stephanie.brogli@stud.unibas.ch" phone="079 489 92 91"/>
+        <resource id="3" name="Stephanie Maier" function="1" contacts="stephanie.maier@stud.unibas.ch" phone="078 818 20 44"/>
+    </resources>
+    <allocations>
+        <allocation task-id="16" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="52" resource-id="0" function="Default:1" responsible="false" load="50.0"/>
+        <allocation task-id="60" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="122" resource-id="0" function="Default:1" responsible="true" load="50.0"/>
+        <allocation task-id="137" resource-id="0" function="Default:1" responsible="true" load="5.0"/>
+        <allocation task-id="157" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="200" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="229" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="63" resource-id="0" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="68" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="94" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="265" resource-id="0" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="388" resource-id="0" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="392" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="266" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="283" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="204" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="206" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="312" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="314" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="16" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="60" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="87" resource-id="1" function="1" responsible="true" load="10.0"/>
+        <allocation task-id="142" resource-id="1" function="1" responsible="true" load="5.0"/>
+        <allocation task-id="146" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="157" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="200" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="208" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="229" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="247" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="286" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="388" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="279" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="278" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="281" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="275" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="283" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="293" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="212" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="204" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="226" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="314" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="16" resource-id="2" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="52" resource-id="2" function="2" responsible="true" load="50.0"/>
+        <allocation task-id="60" resource-id="2" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="63" resource-id="2" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="74" resource-id="2" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="157" resource-id="2" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="200" resource-id="2" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="229" resource-id="2" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="231" resource-id="2" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="244" resource-id="2" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="78" resource-id="2" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="257" resource-id="2" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="265" resource-id="2" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="388" resource-id="2" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="263" resource-id="2" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="170" resource-id="2" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="271" resource-id="2" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="283" resource-id="2" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="204" resource-id="2" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="307" resource-id="2" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="314" resource-id="2" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="3" function="1" responsible="true" load="10.0"/>
+        <allocation task-id="16" resource-id="3" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="60" resource-id="3" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="131" resource-id="3" function="1" responsible="true" load="2.0"/>
+        <allocation task-id="157" resource-id="3" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="177" resource-id="3" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="200" resource-id="3" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="210" resource-id="3" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="229" resource-id="3" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="234" resource-id="3" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="187" resource-id="3" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="191" resource-id="3" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="195" resource-id="3" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="388" resource-id="3" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="182" resource-id="3" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="280" resource-id="3" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="283" resource-id="3" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="291" resource-id="3" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="298" resource-id="3" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="223" resource-id="3" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="204" resource-id="3" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="314" resource-id="3" function="1" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations>
+        <vacation start="2019-03-11" end="2019-03-16" resourceid="1"/>
+    </vacations>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+    <roles>
+        <role id="1" name="GUI developer"/>
+        <role id="2" name="Server developer"/>
+    </roles>
+</project>
